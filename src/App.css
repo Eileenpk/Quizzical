@@ -67,7 +67,8 @@ body {
 }
 
 .quiz--container {
-  width: 75%;
+  padding: 5%;
+  max-width: fit-content;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -93,6 +94,7 @@ body {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .test--possible_answer {
@@ -119,7 +121,32 @@ body {
   background: #D6DBF5;
 }
 
+.test--score_container {
+  text-align: center;
+  margin-top: 30px;
+}
+
 .check--answers_btn {
   margin-top: 20px;
+  margin-left: 25px;
   align-self: center;
+}
+
+.play--again_btn {
+  margin-left: 25px;
+}
+
+.test--score {
+  display: inline;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.correct {
+  background-color: #94D7A2;
+}
+
+.wrong {
+  background-color: #F8BCBC;
 }
